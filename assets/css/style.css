@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
+body{
+  background: #0a2351;
+}
+
+.about-me{
+  font-family: Lato sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: justify;
+}
+
+.titulo{
+  font-family: monospace, serif;
+  color: #ff6215;
+  text-shadow: 3px 5px 5px #000000;
+}
+
+div.container{
+  font-family: monospace, serif;
+  color: #ff6215;
+}
+
+h2.contact-me{
+  font-family: monospace, serif;
+  color: #ff6215
+}
+
+div.remetente{
+  font-size: 15px;
+  font-family: Lato serif;
+  color: white;
+  margin: auto;
+}
+
+.cabecalho{
+  font-family: monospace, serif;
+}
+.itemdalista{
+  color: #ffffff;
+  font: italic small-caps bold 16px/30px cursive, serif;
+}
+.mensagem, .msg{
+  resize: none;
+  padding: 3px;
+  width: 392px;
+  height: 110px;
+}
+
+.nome{
+  padding: 3px;
+}
+.input-nome{
+  width: 321px;
+}
+
+.input-email{
+  width: 322px;
+}
+.email{
+  padding: 3px;
+}
+
+.botao-enviar{
+  padding: 3px;
+  margin-left: 4px;
+  margin-top: 30px;
+}
+
+.social-media{
+  max-width: 30px;
+  max-height: 30px;
+}
+
+hr{
+  width: 358px;
+  margin-left: 0px;
+}
+
+.foto-perfil{
+  width: 131px;
+  border-radius: 65px;
+}
+
+.hacking{
+  width: 206px;
+}
