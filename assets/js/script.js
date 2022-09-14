@@ -19,7 +19,7 @@ botaoEnviar.setAttribute('type', 'button');
 botaoEnviar.innerText = 'Enviar';
 insertBotao.appendChild(botaoEnviar);
 
-function salvarFormulario(field){
+const salvarFormulario = (field)=>{
   field.preventDefault();
   const user = document.querySelector('.input-nome').value;
   const email = document.querySelector('.input-email').value;
@@ -39,3 +39,4 @@ function salvarFormulario(field){
 }
 
 botaoEnviar.addEventListener('click', salvarFormulario);
+

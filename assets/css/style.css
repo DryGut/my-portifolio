@@ -1,25 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
 
+*{
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
   background: #0a2351;
+}
+
+.name{
+  color: #ffffff;
+  text-align-last: center;
+  line-height: 5rem;
+}
+span{
+  color: #ff6215;
 }
 
 .about-me{
   font-family: Lato sans-serif;
   font-size: 20px;
   color: #ffffff;
-  text-align: justify;
+  text-align-last: center;
+  line-height: 2rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  padding-right: 4rem;
+  justify-content: center;
 }
 
 .titulo{
   font-family: monospace, serif;
   color: #ff6215;
   text-shadow: 3px 5px 5px #000000;
+  text-align: center;
+  margin-top: 21rem;
+  font-size: 72px;
+}
+
+div.fazercontato{
+  text-align-last: center;
+  line-height: 5rem;
 }
 
 div.container{
   font-family: monospace, serif;
   color: #ff6215;
+  text-align-last: center;
+  line-height: 3rem;
+  margin-top: 288px;
+}
+
+div.container-title{
+  margin-top: 200px;
 }
 
 h2.contact-me{
@@ -31,25 +69,44 @@ div.remetente{
   font-size: 15px;
   font-family: Lato serif;
   color: white;
-  margin: auto;
+  margin-left: 50rem;
+  margin-top: 3rem;
+  line-height: 2rem;
+}
+
+p{
+  font-size: 32px;
+  margin-left: -33px;
 }
 
 .cabecalho{
   font-family: monospace, serif;
 }
+
 .itemdalista{
   color: #ffffff;
   font: italic small-caps bold 16px/30px cursive, serif;
 }
-.mensagem, .msg{
+
+.mensagem{
   resize: none;
+  padding: 3px;
+  width: 403px;
+  height: 144px;
+}
+
+.msg{
   padding: 3px;
   width: 392px;
   height: 110px;
+  font-size: 28px;
+  line-height: 4rem;
 }
 
 .nome{
   padding: 3px;
+  font-size: 27px;
+  line-height: 5rem;
 }
 .input-nome{
   width: 321px;
@@ -58,8 +115,11 @@ div.remetente{
 .input-email{
   width: 322px;
 }
+
 .email{
   padding: 3px;
+  font-size: 27px;
+  line-height: 0rem;
 }
 
 .botao-enviar{
@@ -68,21 +128,114 @@ div.remetente{
   margin-top: 30px;
 }
 
-.social-media{
-  max-width: 30px;
-  max-height: 30px;
-}
-
-hr{
-  width: 358px;
-  margin-left: 0px;
-}
-
 .foto-perfil{
   width: 131px;
   border-radius: 65px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hacking{
   width: 206px;
+}
+
+.wrapper .sidebar{
+    background: rgb(5, 68, 104);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.wrapper .sidebar .profile{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.wrapper .sidebar .profile img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.wrapper .sidebar .profile h3{
+    color: #ffffff;
+    margin: 10px 0 5px;
+}
+
+.wrapper .sidebar .profile p{
+    color: rgb(206, 240, 253);
+    font-size: 14px;
+}
+
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid #10558d;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+    position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    color: #0c7db1;
+
+    background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+    color: #0c7db1;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+    display: block;
+}
+
+.wrapper .section{
+    width: calc(100% - 225px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
+}
+
+.wrapper .section .top_navbar{
+    background: #0a2351;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+
+}
+
+.wrapper .section .top_navbar .hamburger a{
+    font-size: 28px;
+    color: #f4fbff;
+}
+
+.wrapper .section .top_navbar .hamburger a:hover{
+    color: #a2ecff;
+}
+
+body.active .wrapper .sidebar{
+    left: -225px;
+}
+
+body.active .wrapper .section{
+    margin-left: 0;
+    width: 100%;
 }
