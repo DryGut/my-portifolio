@@ -6,10 +6,10 @@ const formacao = [{curso: "ADS", tipo: "Faculdade"},
                   {curso: "Python", tipo: "Basico"}];
 
 for(let key in formacao){
-const itemDaLista = document.createElement('li');
-itemDaLista.classList.add('itemdalista');
-itemDaLista.innerHTML = `${formacao[key].curso}: ${formacao[key].tipo}`;
-minhaFormacao.appendChild(itemDaLista);
+  const itemDaLista = document.createElement('li');
+  itemDaLista.classList.add('itemdalista');
+  itemDaLista.innerHTML = `${formacao[key].curso}: ${formacao[key].tipo}`;
+  minhaFormacao.appendChild(itemDaLista);
 }
 
 
