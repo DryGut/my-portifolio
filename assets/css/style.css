@@ -16,14 +16,16 @@ body{
   color: #ffffff;
   text-align-last: center;
   line-height: 5rem;
+  font-family: Lato;
+  text-transform: uppercase;
 }
 span{
   color: #ff6215;
 }
 
 .about-me{
-  font-family: Lato sans-serif;
-  font-size: 20px;
+  font-family: ;
+  font-size: 25px;
   color: #ffffff;
   text-align-last: center;
   line-height: 2rem;
@@ -32,6 +34,7 @@ span{
   flex-direction: column;
   padding-right: 4rem;
   justify-content: center;
+  text-transform: capitalize;
 }
 
 .titulo{
@@ -45,7 +48,13 @@ span{
 
 div.fazercontato{
   text-align-last: center;
-  line-height: 5rem;
+  line-height: 3rem;
+  position: relative;
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+  margin: 21rem auto;
+  padding-right: 60rem;
 }
 
 div.container{
@@ -54,6 +63,7 @@ div.container{
   text-align-last: center;
   line-height: 3rem;
   margin-top: 288px;
+  margin-left: -74rem;
 }
 
 div.container-title{
@@ -62,7 +72,19 @@ div.container-title{
 
 h2.contact-me{
   font-family: monospace, serif;
-  color: #ff6215
+  color: #ff6215;
+  padding-right: 1rem;
+  border-right-width: 0px;
+  border-right-style: solid;
+  border-left-style: solid;
+  margin-left: -228px;
+  margin-right: -454px;
+}
+
+hr{
+  border-color: rgba(255,255,255,.6);
+  margin-left: 14rem;
+  margin-right: 15rem;
 }
 
 div.remetente{
@@ -137,7 +159,7 @@ p{
 }
 
 .hacking{
-  width: 206px;
+  
 }
 
 .wrapper .sidebar{
@@ -238,4 +260,61 @@ body.active .wrapper .sidebar{
 body.active .wrapper .section{
     margin-left: 0;
     width: 100%;
+}
+
+
+.social-media-list {
+  position: relative;
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  margin-left: -7rem;
+}
+
+.social-media-list li a {
+  color: #fff;
+}
+
+.social-media-list li {
+  position: relative; 
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 10px 3px;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgb(27,27,27);
+  cursor: pointer; 
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list li:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0 0 0 1px #fff;
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list li:hover {
+  background-color: #fff; 
+}
+
+.social-media-list li:hover:after {
+  opacity: 1;  
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+}
+
+.social-media-list li:hover a {
+  color: #000;
 }

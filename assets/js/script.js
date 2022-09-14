@@ -12,12 +12,6 @@ itemDaLista.innerHTML = `${formacao[key].curso}: ${formacao[key].tipo}`;
 minhaFormacao.appendChild(itemDaLista);
 }
 
-const insertBotao = document.getElementById('form-contact');
-const botaoEnviar = document.createElement('button');
-botaoEnviar.classList.add('botao-enviar');
-botaoEnviar.setAttribute('type', 'button');
-botaoEnviar.innerText = 'Enviar';
-insertBotao.appendChild(botaoEnviar);
 
 const salvarFormulario = (field)=>{
   field.preventDefault();
@@ -38,5 +32,4 @@ const salvarFormulario = (field)=>{
   });
 }
 
-botaoEnviar.addEventListener('click', salvarFormulario);
 
