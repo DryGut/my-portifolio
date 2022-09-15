@@ -25,6 +25,15 @@ span{
   color: #ff6215;
 }
 
+.HTB{
+  margin-left: 71rem;
+  line-height: 3rem;
+  font-size: 20px;
+  font-family: monospace;
+  color: #ff6215;
+  cursor: pointer;
+}
+
 .about-me{
   color: #ffffff;
   text-align-last: center;
@@ -54,7 +63,7 @@ div.fazercontato{
   font-size: 22px;
   text-align: center;
   width: 100%;
-  margin: 21rem auto;
+  margin: 24rem auto;
   padding-right: 60rem;
 }
 
@@ -63,7 +72,7 @@ div.container{
   color: #ff6215;
   text-align-last: center;
   line-height: 3rem;
-  margin-top: 288px;
+  margin-top: 21rem;
   margin-left: -74rem;
 }
 
@@ -97,10 +106,10 @@ div.remetente{
   line-height: 2rem;
 }
 
-p{
+/* p{
   font-size: 32px;
   margin-left: -33px;
-}
+} */
 
 .cabecalho{
   font-family: monospace;
@@ -161,44 +170,52 @@ p{
   margin-right: auto;
 }
 
-.hacking{
-  
+img.hacking{
+  margin-left: 72rem;
+  margin-top: -2rem;
 }
 
 .wrapper .sidebar{
-    background: rgb(5, 68, 104);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 225px;
-    height: 100%;
-    padding: 20px 0;
-    transition: all 0.5s ease;
+  background: rgb(27,27,27);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 225px;
+  height: 100%;
+  padding: 20px 0;
+  transition: all 0.5s ease;
+  border-radius: 0px 89px 0px 0px;
 }
 
 .wrapper .sidebar .profile{
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
 .wrapper .sidebar .profile img{
   display: block;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-left: 3rem;
+  width: 144px;
+  height: 142px;
+  border-radius: 62%;
+  margin-left: 5rem;
+  margin-top: -1rem;
 }
 
 .wrapper .sidebar .profile h3{
   color: #ffffff;
   margin: 11px 0 6px;
   margin-left: 0px;
-  margin-left: -1rem;
+  margin-left: 0px;
+  margin-left: 4rem;
+  font-family: monospace;
+  font-size: 19px;
 }
 
 .wrapper .sidebar .profile p{
-    color: rgb(206, 240, 253);
-    font-size: 14px;
+  color: rgb(206, 240, 253);
+  font-size: 14px;
+  margin-left: 4rem;
+  font-family: monospace;
 }
 
 .wrapper .sidebar ul li a{
@@ -272,7 +289,7 @@ body.active .wrapper .section{
   font-size: 22px;
   text-align: center;
   width: 100%;
-  margin: 0 auto;
+  margin: -4px auto;
   padding: 0;
   margin-left: -7rem;
 }
@@ -296,7 +313,7 @@ body.active .wrapper .section{
 }
 
 .social-media-list li:after {
-  content: '';
+  content: "https://github.com/DryGut", "https://www.linkedin.com/in/renato-martinsEH";
   position: absolute;
   top: 0;
   left: 0;

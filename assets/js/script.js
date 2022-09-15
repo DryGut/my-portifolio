@@ -32,4 +32,6 @@ const salvarFormulario = (field)=>{
   });
 }
 
-
+function certTHM(){
+  window.location = document.getElementById('generateLink').value;
+}
